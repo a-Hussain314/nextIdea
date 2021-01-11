@@ -17,13 +17,13 @@ function user(props) {
       </Head>
 
       <main>
-            user {userId}
+      user id :  {userId}
             <br/><br/>
-            {props.serverPropsUser.name}
+            user name :  {props.serverPropsUser.name}
             <br/><br/>
-            {props.serverPropsUser.email}
+            user email :  {props.serverPropsUser.email}
             <br/><br/>
-            {props.serverPropsUser.phone}
+            user phone :  {props.serverPropsUser.phone}
         <br/><br/>
         
         <Link href="/users">
