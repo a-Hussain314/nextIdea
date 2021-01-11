@@ -12,7 +12,8 @@ function user(props) {
   return (
     <div >
       <Head>
-        <title>{props.serverPropsUser.name}</title>
+        <title>next-idea | {props.serverPropsUser.name}</title>
+        <meta name="description" content={`${props.serverPropsUser.name} works at "${props.serverPropsUser.company.name}" company`} />
         <link rel="icon" href="/idea.png" />
       </Head>
 

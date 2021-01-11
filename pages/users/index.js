@@ -12,7 +12,8 @@ function users(props) {
   return (
     <div >
       <Head>
-        <title>Users</title>
+        <title>next-idea | Users</title>
+        <meta name="description" content={`this page for listing name of the 10 users`} />
         <link rel="icon" href="/idea.png" />
       </Head>
 

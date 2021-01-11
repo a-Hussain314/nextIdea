@@ -12,7 +12,8 @@ function Home(props) {
   return (
     <div >
       <Head>
-        <title>Home</title>
+        <title>next-idea | Home</title>
+        <meta name="description" content={` next-idea website is website cotains data for 10 users`} />
         <link rel="icon" href="/idea.png" />
       </Head>
 
@@ -28,7 +29,7 @@ function Home(props) {
         <br/>
 
         <Link href="/users">
-          <a>go to idea page</a>
+          <a>go to users page</a>
         </Link>
 
       </main>
