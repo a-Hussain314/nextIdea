@@ -3,9 +3,8 @@ import Link from 'next/link'
 import styles from "../../styles/styles.module.scss"
 import axios from 'axios'
 
-
-
 function users(props) {
+  
   const langHandler = () =>{
     props.setLang( props.lang === "en" ? "fr" : "en") 
   }

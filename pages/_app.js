@@ -1,13 +1,21 @@
-import '../styles/globals.scss'
 import Head from 'next/head'
+import '../styles/globals.scss'
 import styles from "../styles/styles.module.scss"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 function MyApp({ Component, pageProps }) {
+  
   const [lang, setLang] = useState("en")
+  useEffect(()=>{
+    document.documentElement.lang = lang
+  }, [lang])
+
   return (
     <>
+  
+
+    
     <Head>
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
