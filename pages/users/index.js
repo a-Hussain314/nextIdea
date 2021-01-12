@@ -14,7 +14,6 @@ function users(props) {
       <Head>
         <title>next-idea | Users</title>
         <meta name="description" content={`this page for listing name of the 10 users`} />
-        <link rel="icon" href="/idea.png" />
       </Head>
 
       <main>
@@ -40,9 +39,7 @@ function users(props) {
         
         <br/>
         
-        <Link href="/">
-          <a>go to Home page</a>
-        </Link>
+        
 
       </main>
 

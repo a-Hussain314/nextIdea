@@ -15,7 +15,18 @@ body {
    margin: 0rem;
   }
 
-header, footer {
-  background-color: rgba(0, 0, 0, 0.26);
+
+header{
+  background-color: rgba(0, 0, 0, 0.13);
+  padding : 1.5rem 0;
+  a{
+    color: darkred;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.13);
   padding : 1.5rem 0
 }

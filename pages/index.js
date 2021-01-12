@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from "../styles/styles.module.scss"
 
 
@@ -14,7 +13,6 @@ function Home(props) {
       <Head>
         <title>next-idea | Home</title>
         <meta name="description" content={` next-idea website is website cotains data for 10 users`} />
-        <link rel="icon" href="/idea.png" />
       </Head>
 
       <main>
@@ -27,11 +25,6 @@ function Home(props) {
         <button onClick={langHandler}>toggle Lang</button>
 
         <br/>
-
-        <Link href="/users">
-          <a>go to users page</a>
-        </Link>
-
       </main>
 
     
