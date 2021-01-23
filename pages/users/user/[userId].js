@@ -47,18 +47,13 @@ function user(props) {
         </div>
       )
     }
-    else{
-      return(
-        <div>oops</div>
-      )
-    }
 }
 
 export async function getServerSideProps(context) {
     const userId = context.params.userId;
 
-    const res = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`)
-    const data = await res.data
+    const res = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`).catch(()=>{});
+    const data =  res? await res.data : null;
     
     if(data){
       return {
@@ -67,7 +62,10 @@ export async function getServerSideProps(context) {
     }
     else{
       return {
-        props: {}, // will be passed to the page component as props
+        redirect: {
+          destination: '/404',
+          permanent: false,
+        }
       }
     }
 
